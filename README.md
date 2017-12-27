@@ -12,7 +12,8 @@ This is a sample docker container is used to test OpenID Connect and OAuth2 with
 2 - Register an authz server with a custom scope and a client app in Okta.
 
 3 - Launch your docker container:
-```
+
+```bash
 docker run -p 80:80 -p 443:443 -d \
 -e OKTA_AUTHZ_SERVER='<YOUR_AUTHZ_SERVER_URL>' \
 -e CLIENT_ID='<YOUR_CLIENT_ID>' \
@@ -40,16 +41,18 @@ docker run -p 80:80 -p 443:443 -d \
 
 ### Specs
 
-The container runs Nginx with OpenResty, SSL (self-signed certificates), and lua-resty-openidc.
-Container runs as https://127.0.0.1.xip.io.
-OAuth uses the authorization code flow.
-The default redirect uri is https://127.0.0.1.xip.io/oidc_redirect
-The default logout uri is https://127.0.0.1.xip.io/oidc_logout
-The HTTP server provides 2 paths: / for UI reverse proxy (with OpenID Connect), and /api/ to API reverse proxy (with OAuth JWT validation).
-You can always work on your Docker/Apache-fu to customize the default behavior.
+- The container runs Nginx with OpenResty, SSL (self-signed certificates), and lua-resty-openidc.
+- Container runs as https://127.0.0.1.xip.io.
+- OAuth uses the authorization code flow.
+- The default redirect uri is https://127.0.0.1.xip.io/oidc_redirect
+- The default logout uri is https://127.0.0.1.xip.io/oidc_logout
+- The HTTP server provides 2 paths: / for UI reverse proxy (with OpenID Connect), and /api/ to API reverse proxy (with OAuth JWT validation).
+- You can always work on your Docker/Apache-fu to customize the default behavior.
+
 
 ### How to run with Okta SSO
-```
+
+```bash
 docker run -p 80:80 -p 443:443 -d \
 -e OKTA_AUTHZ_SERVER='https://ice.okta.com' \
 -e CLIENT_ID='1234' \
@@ -60,7 +63,7 @@ docker run -p 80:80 -p 443:443 -d \
 
 ### How to run with Okta API AM and a custom /api endpoint:
 
-```
+```bash
 docker run -p 80:80 -p 443:443 -d \
 -e OKTA_AUTHZ_SERVER='https://ice.okta.com/oauth2/123456' \
 -e CLIENT_ID='1234' \
@@ -73,7 +76,8 @@ docker run -p 80:80 -p 443:443 -d \
 ### Additional tricks
 
 To run with custom URL and certificates:
-```
+
+```bash
 docker run -p 80:80 -p 443:443 -d \
 -v /my/private/server.key:/etc/ssl/certs/nginx_server.key \
 -v /my/public/server.crt:/etc/ssl/certs/nginx_server.crt \
@@ -82,7 +86,8 @@ docker run -p 80:80 -p 443:443 -d \
 ```
 
 To run with custom config:
-```
+
+```bash
 docker run -p 80:80 -p 443:443 -d \
 -v /my/custom/conf/default.conf:/etc/nginx/conf.d/default.conf \
 ...
