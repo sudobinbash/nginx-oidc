@@ -3,8 +3,6 @@
 
 This is a sample docker container is used to test OpenID Connect and OAuth2 with Nginx.
 
-[![Try in PWD](https://cdn.rawgit.com/play-with-docker/stacks/cff22438/assets/images/button.png)](http://play-with-docker.com/?stack=fhakamine/nginx-oidc/latest)
-
 ### How to use
 
 1 - Sign-up for Okta https://developer.okta.com
