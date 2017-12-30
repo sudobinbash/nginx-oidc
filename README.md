@@ -3,6 +3,11 @@
 
 This is a sample docker container is used to test OpenID Connect and OAuth2 with Nginx.
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/fhakamine/nginx-oidc.svg)][hub]
+[![Docker Stars](https://img.shields.io/docker/stars/fhakamine/nginx-oidc.svg)][hub]
+[![Docker Layers](https://images.microbadger.com/badges/image/fhakamine/nginx-oidc.svg)](https://microbadger.com/images/fhakamine/nginx-oidc)
+[![Docker Version](https://images.microbadger.com/badges/version/fhakamine/nginx-oidc.svg)](https://microbadger.com/images/fhakamine/nginx-oidc)
+
 ### How to use
 
 1 - Sign-up for Okta https://developer.okta.com
