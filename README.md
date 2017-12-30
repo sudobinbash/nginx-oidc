@@ -16,7 +16,7 @@ docker run -p 80:80 -p 443:443 -d \
 -e OKTA_AUTHZ_SERVER='<YOUR_AUTHZ_SERVER_URL>' \
 -e CLIENT_ID='<YOUR_CLIENT_ID>' \
 -e CLIENT_SECRET='<YOUR_CLIENT_ID>' \
---name nginx_openidc fhakamine/nginx_openidc
+--name nginx-oidc fhakamine/nginx-oidc
 ```
 
 4 - Go requestb.in and get a uri
@@ -56,7 +56,7 @@ docker run -p 80:80 -p 443:443 -d \
 -e CLIENT_ID='1234' \
 -e CLIENT_SECRET='secret' \
 -e REVERSE_ACCESS='https://ui.internal.com' \
---name nginx_openidc fhakamine/nginx_openidc
+--name nginx-oidc fhakamine/nginx-oidc
 ```
 
 ### How to run with Okta API AM and a custom /api endpoint:
@@ -68,7 +68,7 @@ docker run -p 80:80 -p 443:443 -d \
 -e CLIENT_SECRET='secret' \
 -e REVERSE_API='https://api.internal.com' \
 -e REVERSE_API='api:read' \
---name nginx_openidc fhakamine/nginx_openidc
+--name nginx-oidc fhakamine/nginx-oidc
 ```
 
 ### Additional tricks
