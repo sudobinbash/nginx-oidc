@@ -3,10 +3,11 @@
 
 This is a sample docker container is used to test OpenID Connect and OAuth2 with Nginx.
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/fhakamine/nginx-oidc.svg)][hub]
-[![Docker Stars](https://img.shields.io/docker/stars/fhakamine/nginx-oidc.svg)][hub]
-[![Docker Layers](https://images.microbadger.com/badges/image/fhakamine/nginx-oidc.svg)](https://microbadger.com/images/fhakamine/nginx-oidc)
-[![Docker Version](https://images.microbadger.com/badges/version/fhakamine/nginx-oidc.svg)](https://microbadger.com/images/fhakamine/nginx-oidc)
+[![Docker Pulls](https://img.shields.io/docker/pulls/fhakamine/nginx-oidc.svg)](https://hub.docker.com/r/fhakamine/nginx-oidc/)
+[![Docker Stars](https://img.shields.io/docker/stars/fhakamine/nginx-oidc.svg)](https://hub.docker.com/r/fhakamine/nginx-oidc/)
+[![Docker Layers](https://images.microbadger.com/badges/image/fhakamine/nginx-oidc.svg)](https://microbadger.com/images/fhakamine/nginx-oidc "Get your own image badge on microbadger.com")
+[![Docker Version](https://images.microbadger.com/badges/version/fhakamine/nginx-oidc.svg)](https://microbadger.com/images/fhakamine/nginx-oidc "Get your own version badge on microbadger.com")
+
 
 ### How to use
 
